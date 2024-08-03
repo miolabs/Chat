@@ -20,9 +20,8 @@ struct MessageTextView: View {
 
     @ViewBuilder
     private func textView(_ text: String) -> some View {
-        if messageUseMarkdown,
-           let attributed = try? AttributedString(markdown: text, options: String.markdownOptions) {
-            Text(attributed)
+        if messageUseMarkdown {
+            Text(text.toDetectedAttributedString())
         } else {
             Text(text)
         }

@@ -54,6 +54,9 @@ public struct ChatTheme {
 
         public var myMessage: Color
         public var friendMessage: Color
+        
+        public var myMessageTint: Color
+        public var friendMessageTint: Color
 
         public var textLightContext: Color
         public var textDarkContext: Color
@@ -79,6 +82,8 @@ public struct ChatTheme {
             messageMenuBackground: Color = Color.white,
             myMessage: Color = Color(hex: "4962FF"),
             friendMessage: Color = Color(hex: "EBEDF0"),
+            myMessageTint: Color = Color(uiColor: .tintColor),
+            friendMessageTint: Color = Color(uiColor: .tintColor),
             textLightContext: Color = Color.black,
             textDarkContext: Color = Color.white,
             textMediaPicker: Color = Color(hex: "818C99"),
@@ -99,6 +104,8 @@ public struct ChatTheme {
             self.messageMenuBackground = messageMenuBackground
             self.myMessage = myMessage
             self.friendMessage = friendMessage
+            self.myMessageTint = myMessageTint
+            self.friendMessageTint = friendMessageTint
             self.textLightContext = textLightContext
             self.textDarkContext = textDarkContext
             self.textMediaPicker = textMediaPicker

@@ -213,6 +213,7 @@ struct MessageView: View {
         let messageView = MessageTextView(text: message.text, messageUseMarkdown: messageUseMarkdown)
             .fixedSize(horizontal: false, vertical: true)
             .padding(.horizontal, MessageView.horizontalTextPadding)
+            .tint(message.user.isCurrentUser ? theme.colors.myMessageTint : theme.colors.friendMessageTint)
 
         let timeView = messageTimeView()
             .padding(.trailing, 12)
