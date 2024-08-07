@@ -221,7 +221,7 @@ public struct ChatView<MessageContent: View, InputViewContent: View, MenuAction:
             HStack {
                 Spacer()
                 Image("waiting", bundle: .current)
-                Text("Waiting for network")
+                Text("Waiting for network", bundle: Bundle.module)
                 Spacer()
             }
             .padding(.top, 6)

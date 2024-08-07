@@ -17,7 +17,7 @@ public enum InputViewStyle {
         case .message:
                 return String(localized: "Type a message...", bundle: Bundle.module)
         case .signature:
-            return String(localized: "Add signature...")
+            return String(localized: "Add signature...", bundle: Bundle.module)
         }
     }
 }
@@ -278,7 +278,7 @@ struct InputView: View {
                         .foregroundColor(theme.colors.myMessage)
                         .frame(width: 2)
                     VStack(alignment: .leading) {
-                        Text("Reply to \(message.user.name)")
+                        Text("Reply to \(message.user.name)", bundle: Bundle.module)
                             .font(.caption2)
                             .foregroundColor(theme.colors.buttonBackground)
                         if !message.text.isEmpty {
@@ -426,7 +426,7 @@ struct InputView: View {
             } label: {
                 HStack {
                     theme.images.recordAudio.cancelRecord
-                    Text("Cancel")
+                    Text("Cancel", bundle: Bundle.module)
                         .font(.footnote)
                         .foregroundColor(theme.colors.textLightContext)
                 }
@@ -438,7 +438,7 @@ struct InputView: View {
     var recordingInProgress: some View {
         HStack {
             Spacer()
-            Text("Recording...")
+            Text("Recording...", bundle: Bundle.module)
                 .font(.footnote)
                 .foregroundColor(theme.colors.textLightContext)
             Spacer()

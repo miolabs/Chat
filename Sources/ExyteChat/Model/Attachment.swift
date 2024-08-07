@@ -12,9 +12,9 @@ public enum AttachmentType: String, Codable {
     public var title: String {
         switch self {
         case .image:
-            return String(localized: "Image", comment: "AttachmentType title")
+            return String(localized: "Image", bundle: Bundle.module, comment: "AttachmentType title")
         default:
-            return String(localized: "Video", comment: "AttachmentType title")
+            return String(localized: "Video", bundle: Bundle.module, comment: "AttachmentType title")
         }
     }
 

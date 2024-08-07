@@ -22,9 +22,9 @@ public enum DefaultMessageMenuAction: MessageMenuAction {
     public func title() -> String {
         switch self {
         case .reply:
-            "Reply"
+            String(localized: "Reply", bundle: Bundle.module, comment: "Message menu action")
         case .edit:
-            "Edit"
+            String(localized: "Edit", bundle: Bundle.module, comment: "Message menu action")
         }
     }
 
