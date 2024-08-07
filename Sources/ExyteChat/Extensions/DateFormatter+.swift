@@ -18,7 +18,7 @@ extension DateFormatter {
         let relativeDateFormatter = DateFormatter()
         relativeDateFormatter.timeStyle = .none
         relativeDateFormatter.dateStyle = .full
-        relativeDateFormatter.locale = Locale(identifier: "en_US")
+        relativeDateFormatter.locale = .current
         relativeDateFormatter.doesRelativeDateFormatting = true
 
         return relativeDateFormatter

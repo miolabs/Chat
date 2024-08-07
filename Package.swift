@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Chat",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v16)
     ],
@@ -39,7 +40,8 @@ let package = Package(
                 .product(name: "ExyteMediaPicker", package: "MediaPicker"),
                 .product(name: "FloatingButton", package: "FloatingButton"),
                 .product(name: "ActivityIndicatorView", package: "ActivityIndicatorView")
-            ]
+            ],
+            resources: [.process("Resources")]
         ),
         .testTarget(
             name: "ExyteChatTests",

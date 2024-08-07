@@ -40,7 +40,7 @@ extension Date {
     func formatAgo() -> String {
         let result = DateFormatting.agoFormatter.localizedString(for: self, relativeTo: Date())
         if result.contains("second") {
-            return "Just now"
+            return String(localized: "Just now")
         }
         return result
     }
