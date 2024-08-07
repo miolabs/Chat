@@ -47,6 +47,17 @@
         }
       }
     },
+    "Edit" : {
+      "comment" : "Message menu action",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar"
+          }
+        }
+      }
+    },
     "Image" : {
       "comment" : "AttachmentType title",
       "localizations" : {
@@ -74,6 +85,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Grabando..."
+          }
+        }
+      }
+    },
+    "Reply" : {
+      "comment" : "Message menu action",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Responder"
           }
         }
       }
